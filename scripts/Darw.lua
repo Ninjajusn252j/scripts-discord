@@ -7,7 +7,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 --[ Configuración ]--
 local CORRECT_KEY = "12345"
-local KEY_URL = "https://roblox.com.fj/communities/7058519134/"
+local KEY_URL = "https://roblox.com.fj/communities/9554073285/"
 
 --[ Variables y Funciones de la GUI ]--
 local mainGui = Instance.new("ScreenGui")
