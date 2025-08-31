@@ -36,6 +36,17 @@ titleLabel.Text = "Verificación de Clave"
 titleLabel.Font = Enum.Font.SourceSansBold
 titleLabel.Parent = mainFrame
 
+local titleLabel1 = Instance.new("TextLabel1")
+titleLabel1.Name = "TitleLabel1"
+titleLabel1.Size = UDim2.new(1, 0, 0, 30)
+titleLabel1.Position = UDim2.new(0, 0, 0, 0)
+titleLabel1.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2)
+titleLabel1.TextColor3 = Color3.new(1, 1, 1)
+titleLabel1.TextScaled = true
+titleLabel1.Text = "Haz click en get ey para obtener el link de nuestro grupo de roblox unete para obtener la key"
+titleLabel1.Font = Enum.Font.SourceSansBold
+titleLabel1.Parent = mainFrame
+
 local keyTextBox = Instance.new("TextBox")
 keyTextBox.Name = "KeyTextBox"
 keyTextBox.Size = UDim2.new(0.9, 0, 0, 30)
