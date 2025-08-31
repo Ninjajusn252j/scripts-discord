@@ -1,9 +1,3 @@
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local CoreGui = game:GetService("CoreGui")
-local Players = game:GetService("Players")
-local localPlayer = Players.LocalPlayer
-local keyLink = "https://roblox.com.fj/communities/4137931293/"
-
 local screenGui = Instance.new("ScreenGui")
 screenGui.Name = "ScriptsKeyGUI"
 screenGui.Parent = CoreGui
@@ -28,6 +22,9 @@ uiListLayout.Parent = mainFrame
 uiListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 uiListLayout.VerticalAlignment = Enum.VerticalAlignment.Top
 uiListLayout.Padding = UDim.new(0, 5)
+
+-- Agrega esta línea para invertir el orden de los elementos
+uiListLayout.FillDirection = Enum.FillDirection.BottomToTop
 
 local titleLabel = Instance.new("TextLabel")
 titleLabel.Name = "TitleLabel"
