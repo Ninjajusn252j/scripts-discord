@@ -17,7 +17,7 @@ mainGui.Parent = PlayerGui
 local function createMainFrame(name)
     local frame = Instance.new("Frame")
     frame.Name = name
-    frame.Size = UDim2.new(0, 300, 0, 400)
+    frame.Size = UDim2.new(0, 300, 0, 300)
     frame.Position = UDim2.new(0.5, 0, 0.5, 0)
     frame.AnchorPoint = Vector2.new(0.5, 0.5)
     frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
