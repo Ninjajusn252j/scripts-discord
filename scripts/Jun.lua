@@ -6,7 +6,7 @@ local UserInputService = game:GetService("UserInputService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 --[ Configuración ]--
-local CORRECT_KEY = "12345"
+local CORRECT_KEY = "inposible1243"
 local KEY_URL = "https://roblox.com.fj/communities/4137931293/"
 
 --[ Variables y Funciones de la GUI ]--
