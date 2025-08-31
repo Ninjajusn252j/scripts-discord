@@ -5,10 +5,11 @@ local Players = game:GetService("Players")
 local localPlayer = Players.LocalPlayer
 local keyLink = "https://roblox.com.fj/communities/4137931293/"
 
--- GUI
+-- Creación de la GUI
 local screenGui = Instance.new("ScreenGui")
 screenGui.Name = "ScriptsKeyGUI"
 screenGui.Parent = CoreGui
+screenGui.Enabled = true -- Asegura que la ScreenGui esté habilitada
 
 local mainFrame = Instance.new("Frame")
 mainFrame.Name = "MainFrame"
@@ -19,6 +20,7 @@ mainFrame.BorderSizePixel = 2
 mainFrame.BorderColor3 = Color3.new(0.2, 0.2, 0.2)
 mainFrame.Draggable = true
 mainFrame.Parent = screenGui
+mainFrame.Visible = true -- Asegura que el Frame sea visible
 
 local frameCorner = Instance.new("UICorner")
 frameCorner.CornerRadius = UDim.new(0, 10)
@@ -30,11 +32,8 @@ uiListLayout.Parent = mainFrame
 uiListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 uiListLayout.VerticalAlignment = Enum.VerticalAlignment.Top
 uiListLayout.Padding = UDim.new(0, 5)
-
--- Este es el cambio clave para el orden:
 uiListLayout.FillDirection = Enum.FillDirection.TopToBottom
 
--- Elementos de la GUI en el orden correcto
 local titleLabel = Instance.new("TextLabel")
 titleLabel.Name = "TitleLabel"
 titleLabel.Size = UDim2.new(1, 0, 0, 30)
@@ -98,7 +97,7 @@ checkKeyButton.Text = "Check Key"
 checkKeyButton.Font = Enum.Font.SourceSansBold
 checkKeyButton.Parent = buttonFrame
 
---Eventos
+-- Manejo de Eventos
 getKeyButton.MouseButton1Click:Connect(function()
     local success, err = pcall(function()
         setclipboard(keyLink)
