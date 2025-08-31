@@ -1,3 +1,11 @@
+-- Variables
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local CoreGui = game:GetService("CoreGui")
+local Players = game:GetService("Players")
+local localPlayer = Players.LocalPlayer
+local keyLink = "https://roblox.com.fj/communities/4137931293/"
+
+-- GUI
 local screenGui = Instance.new("ScreenGui")
 screenGui.Name = "ScriptsKeyGUI"
 screenGui.Parent = CoreGui
@@ -23,9 +31,10 @@ uiListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 uiListLayout.VerticalAlignment = Enum.VerticalAlignment.Top
 uiListLayout.Padding = UDim.new(0, 5)
 
--- Agrega esta línea para invertir el orden de los elementos
-uiListLayout.FillDirection = Enum.FillDirection.BottomToTop
+-- Este es el cambio clave para el orden:
+uiListLayout.FillDirection = Enum.FillDirection.TopToBottom
 
+-- Elementos de la GUI en el orden correcto
 local titleLabel = Instance.new("TextLabel")
 titleLabel.Name = "TitleLabel"
 titleLabel.Size = UDim2.new(1, 0, 0, 30)
@@ -89,6 +98,7 @@ checkKeyButton.Text = "Check Key"
 checkKeyButton.Font = Enum.Font.SourceSansBold
 checkKeyButton.Parent = buttonFrame
 
+--Eventos
 getKeyButton.MouseButton1Click:Connect(function()
     local success, err = pcall(function()
         setclipboard(keyLink)
